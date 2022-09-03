@@ -1,0 +1,229 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    background-color: #218b7f;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+nav .short_nav{
+    display: none;
+}
+
+.nav_options{
+    list-style-type: none;
+}
+
+.nav_options{
+    flex-basis: 61%;
+    display: inline-flex;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+.whatsapp_logo{
+    text-align: center;
+}
+
+.whatsapp_logo span{
+    font-size: 25px;
+    vertical-align: 35%;
+    border: white;
+    padding-left: 4px;
+}
+
+nav a{
+    color: white;
+}
+
+.dropdown_main .fa-sort-down{
+    font-size: 10px;
+    vertical-align: right;
+}
+
+.content_body{
+    position: relative;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0% 5%;
+}
+
+.upper_content{
+    display: flex;
+    flex-direction: row;
+    font-family:  arial,sans-serif;
+    color: rgb(0, 0, 0);
+    line-height: 33px;
+    align-self: center;
+    justify-content: space-evenly;
+    padding-left: 8%;
+    flex-wrap: wrap;
+}
+
+.simple_intro,.mobile_image{
+    flex-basis: 40%;
+}
+
+.upper_content .simple_intro{
+    align-self: center;
+}
+
+.upper_content h2{
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 35px;
+    line-height: 45px;
+    color: black;
+}
+
+.upper_content p{
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    line-height: 25px;
+}
+
+.highlight_detail{
+    color:#3d4141;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+.details_list{
+    list-style-type: none;
+    line-height: 40px;
+    padding-left: 1%;
+}
+
+.details_list a{
+    color: #2EB29C;
+    font-size: 18px;
+}
+
+.botao{
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px){
+
+    *{
+        background-color: #218b7f;
+    }
+    .highlight_detail{
+        display: none;
+    }
+    .details_list{
+        display: none;
+    }
+    .whatsapp_logo{
+        text-align: center;
+    }
+    .whatsapp_logo span{
+        display: none;
+    }
+    .dropdown_main span{
+        display: none;
+    }
+
+    .botao{
+        display: inline-block;
+        background-color: #145c54;
+        width: 180px;
+        height: 50px;
+        border:none;
+        border-radius: 50px;
+        font-weight: 400;
+        font-size: 17px;
+        color: #ffffff;
+    }
+
+    .botao span{
+        background-color: #145c54;
+    }
+
+    nav{
+        position: relative;
+        display: inline-block;
+        top: -10px;
+        padding-left: 4px;
+        width: 102%;
+    }
+
+    nav .part_nav{
+        display: none;
+    }
+
+    nav .short_nav{
+        display: inline;
+        text-align: center;  
+    }
+    
+    .short_nav #dropdown{
+        position: absolute;
+        right: 20px;
+        padding-top: 20px;
+    }
+
+    .short_nav p{
+        text-align: center;
+        padding-top: 58px;
+        text-align: center;
+    }
+
+    .fa-bars{
+        font-size: 20px;
+    }
+
+    .content_body h2{
+        color: white;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .content_body p{
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .content_body{
+        padding: 0 0;
+        top: 5px;
+        background-color:#218b7f;
+    }
+    
+    .simple_intro{
+        flex-basis: 100%;
+    }
+
+    .mobile_image{
+        flex-basis: 100%;
+        height: 550px;
+        text-align: center;
+        padding-top: 40px;
+        padding-right: 22px;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+       }
+}
